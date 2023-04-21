@@ -1,9 +1,19 @@
 /********** Template CSS **********/
+
+
+body, html {
+    overflow-x: hidden;
+}
+
 :root {
     --primary: #348E38;
     --secondary: #525368;
     --light: #E8F5E9;
     --dark: #0F4229;
+}
+
+.hide {
+    visibility: hidden !important;
 }
 
 .back-to-top {

@@ -13,7 +13,8 @@
     
     
     // Initiate the wowjs
-    new WOW().init();
+    window.wow = new WOW();
+    window.wow.init();
 
 
     // Sticky Navbar
@@ -55,8 +56,15 @@
     $('#portfolio-flters li').on('click', function () {
         $("#portfolio-flters li").removeClass('active');
         $(this).addClass('active');
-
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
+        let filter = $(this).data('filter');
+        portfolioIsotope.isotope({filter: filter});
+        let divs = $("#service-container").children();
+        divs.filter(filter).each(function() {
+            window.wow.show(this);
+        });
+        divs.not(filter).each(function() {
+            $(this).hide();
+        });
     });
 
 
