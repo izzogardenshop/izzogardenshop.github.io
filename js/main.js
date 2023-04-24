@@ -46,8 +46,22 @@
                 $('#navbar-button ').click();
             }
 
+            let attr = $(this).attr('href'); 
+            let top = $($(this).attr('href')).offset().top;
+            let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+            if (isMobile) {
+                if (attr === "#services") {
+                    top -= 350;
+                } else if (attr === "#contact") {
+                    top -= 300;
+                }
+            } else {
+                if (attr === "#services") {
+                    top -= 50;
+                }
+            }
             $('html, body').animate({
-                scrollTop: $($(this).attr('href')).offset().top,
+                scrollTop: top,
             }, 1000);
         })
     });
