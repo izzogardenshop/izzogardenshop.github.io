@@ -46,8 +46,8 @@
                 $('#navbar-button ').click();
             }
 
-            let attr = $(this).attr('href'); 
-            let top = $($(this).attr('href')).offset().top;
+            let attr = $(this).attr('data-tid'); 
+            let top = $(attr).offset().top;
             let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
             if (isMobile) {
                 if (attr === "#services") {
