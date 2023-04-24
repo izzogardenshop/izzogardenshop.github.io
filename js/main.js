@@ -40,6 +40,16 @@
         return false;
     });
 
+    $(document).ready(function(){
+        $('#navbar-nav a').on('click', function() {
+            $('#navbar-button').click();
+
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top,
+            }, 1000);
+        })
+    });
+
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
