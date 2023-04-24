@@ -42,7 +42,9 @@
 
     $(document).ready(function(){
         $('#navbar-nav a').on('click', function() {
-            $('#navbar-button').click();
+            if ($("#navbar-button").is(":visible")) {
+                $('#navbar-button ').click();
+            }
 
             $('html, body').animate({
                 scrollTop: $($(this).attr('href')).offset().top,
