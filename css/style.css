@@ -195,7 +195,7 @@ h6,
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -412,10 +412,12 @@ h6,
 
 .img-fluid-sm {
     height: 243px;
+    width: 404px;
 }
 
 .img-fluid-lg {
-    height: 505px;
+    height: 503px;
+    width: 404px;
 }
 
 
