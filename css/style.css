@@ -410,6 +410,14 @@ h6,
     color: var(--light);
 }
 
+.img-fluid-sm {
+    height: 243px;
+}
+
+.img-fluid-lg {
+    height: 505px;
+}
+
 
 /*** Team ***/
 .team-item {
