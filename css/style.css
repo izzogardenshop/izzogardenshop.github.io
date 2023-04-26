@@ -261,7 +261,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     z-index: -1;
 }
 
@@ -322,7 +322,7 @@ h6,
     color: var(--dark);
     background: var(--light);
     white-space: nowrap;
-    overflow: hidden;
+    overflow-x: hidden;
     transition: .3s;
 }
 
@@ -355,7 +355,7 @@ h6,
 
 .portfolio-inner {
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .portfolio-inner::before,
@@ -409,15 +409,6 @@ h6,
     background: var(--primary);
     color: var(--light);
 }
-
-.img-fluid-sm {
-    height: 243px;
-}
-
-.img-fluid-lg {
-    height: 503px;
-}
-
 
 /*** Team ***/
 .team-item {
